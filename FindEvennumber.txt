@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<body>
+    <p>Array: <span id="array"></span></p>
+    <p>Even No: <span id="evenNo"></span></p>
+
+    <script>
+
+        var mixNumArray = [40, 100, 1, 5, 25,42, 10];
+        document.getElementById("array").innerHTML = mixNumArray;
+
+        function getAllEvenNumbers() {
+            let arr = [];
+            for (let i = 0; i <= mixNumArray.length; i++) {
+                
+                if (mixNumArray[i] % 2 === 0) {
+                    arr.push(mixNumArray[i]);
+                }
+            }
+            document.getElementById("evenNo").innerHTML = arr;
+        }
+        getAllEvenNumbers();
+
+    </script>
+</body>
+
+</html>

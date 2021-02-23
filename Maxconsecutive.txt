@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+    <p>Array: <span id="array"></span></p>
+    <p>maxConsOne: <span id="maxConsOne"></span></p>
+
+<script>
+
+var txt = '00110111111110010011110'
+var arr = txt.split('');
+var count = 0;
+var oneLength = [];
+for(var i = 0; i < arr.length; i++) {
+    if(+arr[i] === 1) {
+    count++;
+} else {
+    oneLength.push(count);
+    count = 0
+  }
+}
+console.log(Math.max(...oneLength));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<body>
+  <p>completed: <span id="completed"></span></p>
+  <p>id: <span id="id"></span></p>
+  <p>title: <span id="title"></span></p>
+  <p>userId: <span id="userId"></span></p>
+<script type="text/javascript">
+  fetch('https://jsonplaceholder.typicode.com/todos/1').then( (apidata) => {
+    return apidata.json();
+}).then(data => {
+    document.getElementById("completed").innerHTML = data.completed;
+    document.getElementById("id").innerHTML = data.id;
+    document.getElementById("title").innerHTML = data.title;
+    document.getElementById("userId").innerHTML = data.userId;
+})
+.catch( (error) => {
+  console.log(error);
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<body>
+  <code style="background-color: #000; color: #fff" id="code"></code>
+<script>
+var obj = [
+  {name: "abc" , id: 4},
+  {name: "abc1" , id: 10},
+  {name: "abc2" , id: 5},
+  {name: "abc3" , id: 6}
+];
+  var shortedData = obj.sort(function(a, b){return a.id - b.id});
+  document.getElementById("code").innerHTML = JSON.stringify(shortedData);
+</script>
+
+
+</body>
+</html>
+
+</script>
+
+
+</body>
+</html>
